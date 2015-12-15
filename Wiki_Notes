@@ -1,0 +1,25 @@
+output.py - customPrint() - ColorCodes etc.
+
+message_as_list_with_ccodes - Argument needs a List to work! => ["[", "[%blue%][$bold$]Sender", "] Server ", "[%yellow%]sv31", " is currently ", "[%red%]OFFLINE\n"]
+
+You can just type text into an item from the list, or use the color and attribute codes below:
+
+ColorCodes:
+
+    [%grey%]
+    [%red%]
+    [%green%]
+    [%yellow%]
+    [%blue%]
+    [%magenta%]
+    [%cyan%]
+    [%white%]
+
+AttributeCodes:
+
+    [$bold$]
+    [$dark$]
+    [$underline$]
+    [$blink$]
+    [$reverse$]
+    [$concealed$]

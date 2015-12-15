@@ -1,0 +1,10 @@
+setup.py
+reds_py_lib/__init__.py
+reds_py_lib/logger.py
+reds_py_lib/output.py
+reds_py_lib.egg-info/PKG-INFO
+reds_py_lib.egg-info/SOURCES.txt
+reds_py_lib.egg-info/dependency_links.txt
+reds_py_lib.egg-info/not-zip-safe
+reds_py_lib.egg-info/requires.txt
+reds_py_lib.egg-info/top_level.txt
