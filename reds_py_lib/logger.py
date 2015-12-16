@@ -12,7 +12,7 @@ __author__ = 'Red_C0der'
 #  |   Version: 0.0.2                                                              |
 #  |   Development-State: Alpha                                                    |
 #  |   Project-ID: 0024                                                            |
-#  |   GitHub-Page: https://github.com/Red-C0der/                                  |
+#  |   GitHub-Page: https://red-c0der.github.io/Reds_Py_Lib/site/index.html        |
 #  |   License: /LICENSE.txt                                                       |
 #  |                                                                               |
 #  |                                                                               |
