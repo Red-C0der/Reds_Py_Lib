@@ -1,0 +1,20 @@
+site_name: Reds_Python_Lib
+site_url:
+repo_url: https://github.com/Red-C0der/Reds_Py_Lib
+repo_name: GitHub
+site_author: Red_C0der
+copyright: © Red_C0der 2015/16
+
+theme: flatly
+
+pages:
+- Home: index.md
+- Documentation:
+    - 'Setup': 'setup.md'
+    - 'File System': 'file-system.md'
+    - 'Usage': 'usage.md'
+    - 'Azurite Script': 'azurite-script.md'
+    - 'API - Implementation': 'api-implementation.md'
+- About:
+    - 'Contact': 'contact.md'
+    - 'License': 'license.md'
