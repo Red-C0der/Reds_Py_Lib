@@ -21,34 +21,34 @@
             "title": "Project layout:"
         }, 
         {
-            "location": "/installation/", 
-            "text": "Installing Azurite\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.", 
-            "title": "Installation"
-        }, 
-        {
-            "location": "/installation/#installing-azurite", 
-            "text": "mkdocs new [dir-name]  - Create a new project.", 
-            "title": "Installing Azurite"
-        }, 
-        {
             "location": "/setup/", 
-            "text": "", 
+            "text": "Setup\n\n\nTo install / setup Reds_Py_Lib simply run the following commands inside a Terminal.\n\n\ngit clone https://github.com/Red-C0der/Reds_Py_Lib\n\n\ncd Reds_Py_Lib/\n\n\nsudo python setup.py install\n\n\nThat's it! You successfully installed Reds_Py_Lib! Use these commands to try it out:\n\n\npython\n\n\nimport reds_py_lib\n\n\nreds_py_lib.output.statePrint(\"info\", \"IT WORKS!!\")", 
             "title": "Setup"
         }, 
         {
-            "location": "/system-modules/", 
-            "text": "All System Modules\n\n\nHere you can see a short description of ALL system modules,\n\n\nto know what the do.\n\n\ntest.py - Just for testing\n\n\n\n\nTheoretically we could skip this file, because essentially there is nothing special\n  in there. It's just used to test things.\n\n\n\n\nsetup.py - Installing the system\n\n\ninstall()\n\n\n\n\nThis function starts the installation-progress.\n  It reads each tag from the setting/setup_sequence.xml and\n  runs the corresponding action.\n\n\n\n\nlogger.py - Handling logfiles\n\n\nwrite(level, message, lloc=\"\", LogFile=\"\")\n\n\n\n\nThis function opens a logfile, if it is specified in [LogFile=\"\"]\n  or generates a new one with the current date as filename,\n  if no name is specified in [LogFile=\"\"].\n  Then it write's the message [message] with the\n  logging-level [level] and the current time to a new line in the file.\n\n\n\n\nnone.py", 
-            "title": "System File Explanation"
+            "location": "/setup/#setup", 
+            "text": "To install / setup Reds_Py_Lib simply run the following commands inside a Terminal.  git clone https://github.com/Red-C0der/Reds_Py_Lib  cd Reds_Py_Lib/  sudo python setup.py install  That's it! You successfully installed Reds_Py_Lib! Use these commands to try it out:  python  import reds_py_lib  reds_py_lib.output.statePrint(\"info\", \"IT WORKS!!\")", 
+            "title": "Setup"
         }, 
         {
-            "location": "/system-modules/#all-system-modules", 
-            "text": "Here you can see a short description of ALL system modules,  to know what the do.  test.py - Just for testing   Theoretically we could skip this file, because essentially there is nothing special\n  in there. It's just used to test things.   setup.py - Installing the system  install()   This function starts the installation-progress.\n  It reads each tag from the setting/setup_sequence.xml and\n  runs the corresponding action.   logger.py - Handling logfiles  write(level, message, lloc=\"\", LogFile=\"\")   This function opens a logfile, if it is specified in [LogFile=\"\"]\n  or generates a new one with the current date as filename,\n  if no name is specified in [LogFile=\"\"].\n  Then it write's the message [message] with the\n  logging-level [level] and the current time to a new line in the file.   none.py", 
-            "title": "All System Modules"
+            "location": "/file-system/", 
+            "text": "File System\n\n\nReds_Python_Lib/\n\u2502   README.md                   - Contains project information.\n\u2502   setup.py                    - Python setup file.\n\u2502   Wiki_Notes                  - Just some notes, I take during coding.\n\u2502\n\u2514\u2500\u2500\u2500reds_py_lib/\n    \u2502   __init__.py             - Python __init__ file.\n    \u2502   logger.py               - Handles logging and log-files for my projects. \n    \u2502   output.py               - Handles custom outputs for my projects. (Colors etc.)", 
+            "title": "File System"
+        }, 
+        {
+            "location": "/file-system/#file-system", 
+            "text": "Reds_Python_Lib/\n\u2502   README.md                   - Contains project information.\n\u2502   setup.py                    - Python setup file.\n\u2502   Wiki_Notes                  - Just some notes, I take during coding.\n\u2502\n\u2514\u2500\u2500\u2500reds_py_lib/\n    \u2502   __init__.py             - Python __init__ file.\n    \u2502   logger.py               - Handles logging and log-files for my projects. \n    \u2502   output.py               - Handles custom outputs for my projects. (Colors etc.)", 
+            "title": "File System"
         }, 
         {
             "location": "/usage/", 
-            "text": "", 
-            "title": "Use Azurite"
+            "text": "Usage\n\n\nIn this section, I'll go over all the classes, functions, files, which you can use with my library!\n\n\nFile: output.py | Function: customPrint()\n\n\nThis Function can output a message containing formatting and colorcodes\n\n\noutput.customPrint(message_as_list_with_ccodes, debug=0)\n\n\nmessage_as_list_with_ccodes - Takes a list, which contains the message!\n\n    Example without formatting:\n        [\"This is\", \"cool\", \"stuff\", \"!\"]\n    Example with formatting:\n        [\"This will\", \"[%green%]be\", \"[%blue%]colored\", \"[$bold$]cause colored is cool!\"]\n\ndebug - Can be 0 or 1. Determinates whether to give back some debug information or not.\n\n    debug=0: Will not give back specially detailed debug information.\n    debug=1: Will give back specially detailed debug information.\n\n\n\nFile: output.py | Function: statePrint()\n\n\noutput.statePrint(state, message, debug=0)\n\n\nstate - Determinates what stands inside the first pair of brackets.\n\n    \"\"        - This stands for working! It will print [....].\n                Use this when you want to print out a working task!\n    \"ok\"      - Message after will be green!\n    \"error\"   - Message after will be red!\n    \"warning\" - Message after will be orange!\n    \"info\"    - Message after will be turquoise and bold!\n    \"debug\"   - Message after will be magenta!\n    \"sys\"     - Message after will be blue!\n\nmessage - The message, which you want to display after the brackets.\n\ndebug - Can be 0 or 1. Determinates whether to give back some debug information or not.\n\n    debug=0: Will not give back specially detailed debug information.\n    debug=1: Will give back specially detailed debug information.\n\n\n\nFile: logger.py | Function: write()\n\n\nThis function handles logging and also the corresponding log-files.\n\n\nlogger.write(level, message, lloc=\"\", LogFile=\"\")\n\n\nlevel - The logging level (what it writes in front of the logging message).\n    \"i\"     - INFO\n    \"w\"     - WARNING\n    \"e\"     - ERROR\n    \"c\"     - CRITICAL\n    \"ex\"    - EXCEPTION\n    \"d\"     - DEBUG\n\nmessage - The message, which it writes after the logging-level\n    For example: \"This is an informative message!\"\n\nlloc = Write this in here and replace it with correct data: \"File: Test.py | Class: Main | Function: test | Message: \"", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/usage/#usage", 
+            "text": "In this section, I'll go over all the classes, functions, files, which you can use with my library!  File: output.py | Function: customPrint()  This Function can output a message containing formatting and colorcodes  output.customPrint(message_as_list_with_ccodes, debug=0)  message_as_list_with_ccodes - Takes a list, which contains the message!\n\n    Example without formatting:\n        [\"This is\", \"cool\", \"stuff\", \"!\"]\n    Example with formatting:\n        [\"This will\", \"[%green%]be\", \"[%blue%]colored\", \"[$bold$]cause colored is cool!\"]\n\ndebug - Can be 0 or 1. Determinates whether to give back some debug information or not.\n\n    debug=0: Will not give back specially detailed debug information.\n    debug=1: Will give back specially detailed debug information.  File: output.py | Function: statePrint()  output.statePrint(state, message, debug=0)  state - Determinates what stands inside the first pair of brackets.\n\n    \"\"        - This stands for working! It will print [....].\n                Use this when you want to print out a working task!\n    \"ok\"      - Message after will be green!\n    \"error\"   - Message after will be red!\n    \"warning\" - Message after will be orange!\n    \"info\"    - Message after will be turquoise and bold!\n    \"debug\"   - Message after will be magenta!\n    \"sys\"     - Message after will be blue!\n\nmessage - The message, which you want to display after the brackets.\n\ndebug - Can be 0 or 1. Determinates whether to give back some debug information or not.\n\n    debug=0: Will not give back specially detailed debug information.\n    debug=1: Will give back specially detailed debug information.  File: logger.py | Function: write()  This function handles logging and also the corresponding log-files.  logger.write(level, message, lloc=\"\", LogFile=\"\")  level - The logging level (what it writes in front of the logging message).\n    \"i\"     - INFO\n    \"w\"     - WARNING\n    \"e\"     - ERROR\n    \"c\"     - CRITICAL\n    \"ex\"    - EXCEPTION\n    \"d\"     - DEBUG\n\nmessage - The message, which it writes after the logging-level\n    For example: \"This is an informative message!\"\n\nlloc = Write this in here and replace it with correct data: \"File: Test.py | Class: Main | Function: test | Message: \"", 
+            "title": "Usage"
         }, 
         {
             "location": "/azurite-script/", 

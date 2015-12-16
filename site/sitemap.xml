@@ -4,7 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2015-10-23</lastmod>
+     <lastmod>2015-12-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,38 +12,32 @@
     
         
     <url>
-     <loc>None/installation/</loc>
-     <lastmod>2015-10-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>None/setup/</loc>
-     <lastmod>2015-10-23</lastmod>
+     <lastmod>2015-12-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/system-modules/</loc>
-     <lastmod>2015-10-23</lastmod>
+     <loc>None/file-system/</loc>
+     <lastmod>2015-12-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/usage/</loc>
-     <lastmod>2015-10-23</lastmod>
+     <lastmod>2015-12-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/azurite-script/</loc>
-     <lastmod>2015-10-23</lastmod>
+     <lastmod>2015-12-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/api-implementation/</loc>
-     <lastmod>2015-10-23</lastmod>
+     <lastmod>2015-12-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -53,13 +47,13 @@
         
     <url>
      <loc>None/contact/</loc>
-     <lastmod>2015-10-23</lastmod>
+     <lastmod>2015-12-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/license/</loc>
-     <lastmod>2015-10-23</lastmod>
+     <lastmod>2015-12-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

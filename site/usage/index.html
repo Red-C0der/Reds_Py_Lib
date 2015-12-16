@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>Use Azurite - Azurite</title>
+	<title>Usage - Reds_Python_Lib</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -41,7 +41,7 @@
             </button>
 
             <!-- Main title -->
-            <a class="navbar-brand" href="..">Azurite</a>
+            <a class="navbar-brand" href="..">Reds_Python_Lib</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -61,19 +61,15 @@
                     <ul class="dropdown-menu">
                     
                         <li >
-                            <a href="../installation/">Installation</a>
-                        </li>
-                    
-                        <li >
                             <a href="../setup/">Setup</a>
                         </li>
                     
                         <li >
-                            <a href="../system-modules/">System File Explanation</a>
+                            <a href="../file-system/">File System</a>
                         </li>
                     
                         <li class="active">
-                            <a href="./">Use Azurite</a>
+                            <a href="./">Usage</a>
                         </li>
                     
                         <li >
@@ -110,7 +106,7 @@
             <!-- Search, Navigation and Repo links -->
             <ul class="nav navbar-nav navbar-right">
                 <li >
-                    <a rel="next" href="../system-modules/">
+                    <a rel="next" href="../file-system/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
@@ -121,7 +117,7 @@
                 </li>
                 
                 <li>
-                    <a href="https://github.com/Red-C0der/Azurite">
+                    <a href="https://github.com/Red-C0der/Reds_Py_Lib">
                         
                             <i class="fa fa-github"></i>
                         
@@ -138,11 +134,72 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
+        <li class="main active"><a href="#usage">Usage</a></li>
+        
+            <li><a href="#file-outputpy-function-customprint">File: output.py | Function: customPrint()</a></li>
+        
+            <li><a href="#file-outputpy-function-stateprint">File: output.py | Function: statePrint()</a></li>
+        
+            <li><a href="#file-loggerpy-function-write">File: logger.py | Function: write()</a></li>
+        
+    
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-</div>
+<h1 id="usage">Usage</h1>
+<p>In this section, I'll go over all the classes, functions, files, which you can use with my library!</p>
+<h3 id="file-outputpy-function-customprint">File: output.py | Function: customPrint()</h3>
+<p>This Function can output a message containing formatting and colorcodes</p>
+<p><code>output.customPrint(message_as_list_with_ccodes, debug=0)</code></p>
+<pre><code>message_as_list_with_ccodes - Takes a list, which contains the message!
+
+    Example without formatting:
+        ["This is", "cool", "stuff", "!"]
+    Example with formatting:
+        ["This will", "[%green%]be", "[%blue%]colored", "[$bold$]cause colored is cool!"]
+
+debug - Can be 0 or 1. Determinates whether to give back some debug information or not.
+
+    debug=0: Will not give back specially detailed debug information.
+    debug=1: Will give back specially detailed debug information.
+</code></pre>
+<h3 id="file-outputpy-function-stateprint">File: output.py | Function: statePrint()</h3>
+<p><code>output.statePrint(state, message, debug=0)</code></p>
+<pre><code>state - Determinates what stands inside the first pair of brackets.
+
+    ""        - This stands for working! It will print [....].
+                Use this when you want to print out a working task!
+    "ok"      - Message after will be green!
+    "error"   - Message after will be red!
+    "warning" - Message after will be orange!
+    "info"    - Message after will be turquoise and bold!
+    "debug"   - Message after will be magenta!
+    "sys"     - Message after will be blue!
+
+message - The message, which you want to display after the brackets.
+
+debug - Can be 0 or 1. Determinates whether to give back some debug information or not.
+
+    debug=0: Will not give back specially detailed debug information.
+    debug=1: Will give back specially detailed debug information.
+</code></pre>
+<h3 id="file-loggerpy-function-write">File: logger.py | Function: write()</h3>
+<p>This function handles logging and also the corresponding log-files.</p>
+<p><code>logger.write(level, message, lloc="", LogFile="")</code></p>
+<pre><code>level - The logging level (what it writes in front of the logging message).
+    "i"     - INFO
+    "w"     - WARNING
+    "e"     - ERROR
+    "c"     - CRITICAL
+    "ex"    - EXCEPTION
+    "d"     - DEBUG
+
+message - The message, which it writes after the logging-level
+    For example: "This is an informative message!"
+
+lloc = Write this in here and replace it with correct data: "File: Test.py | Class: Main | Function: test | Message: "
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">

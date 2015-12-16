@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>License - Reds_Python_Lib</title>
+	<title>File System - Reds_Python_Lib</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -56,7 +56,7 @@
             
             
             
-                <li class="dropdown">
+                <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
@@ -64,8 +64,8 @@
                             <a href="../setup/">Setup</a>
                         </li>
                     
-                        <li >
-                            <a href="../file-system/">File System</a>
+                        <li class="active">
+                            <a href="./">File System</a>
                         </li>
                     
                         <li >
@@ -85,7 +85,7 @@
             
             
             
-                <li class="dropdown active">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
@@ -93,8 +93,8 @@
                             <a href="../contact/">Contact</a>
                         </li>
                     
-                        <li class="active">
-                            <a href="./">License</a>
+                        <li >
+                            <a href="../license/">License</a>
                         </li>
                     
                     </ul>
@@ -106,12 +106,12 @@
             <!-- Search, Navigation and Repo links -->
             <ul class="nav navbar-nav navbar-right">
                 <li >
-                    <a rel="next" href="../contact/">
+                    <a rel="next" href="../setup/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
-                <li class="disabled">
-                    <a rel="prev" >
+                <li >
+                    <a rel="prev" href="../usage/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -134,24 +134,36 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#license">License</a></li>
-        
-            <li><a href="#maximilian-vincent-heidenreich-hereby-disclaims-all-copyright-interest-in-the-program">Maximilian Vincent Heidenreich, hereby disclaims all copyright interest in the program</a></li>
-        
-            <li><a href="#azurite-which-is-a-personal-assistant-and-api-written-by-maximilian-vincent-heidenreich">"Azurite" (which is a personal assistant and API) written by Maximilian Vincent Heidenreich.</a></li>
-        
-            <li><a href="#maximilian-vincent-heidenreich-30-september-2015">Maximilian Vincent Heidenreich, 30 September 2015</a></li>
+        <li class="main active"><a href="#file-system">File System</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="license">License</h1>
-<h4 id="maximilian-vincent-heidenreich-hereby-disclaims-all-copyright-interest-in-the-program">Maximilian Vincent Heidenreich, hereby disclaims all copyright interest in the program</h4>
-<h4 id="azurite-which-is-a-personal-assistant-and-api-written-by-maximilian-vincent-heidenreich">"Azurite" (which is a personal assistant and API) written by Maximilian Vincent Heidenreich.</h4>
-<h4 id="maximilian-vincent-heidenreich-30-september-2015">Maximilian Vincent Heidenreich, 30 September 2015</h4>
-<h6 id="maximilian-vincent-heidenreich-creator-of-azurite">Maximilian Vincent Heidenreich, Creator of "Azurite"</h6></div>
+<h1 id="file-system">File System</h1>
+<pre><code>Reds_Python_Lib/
+│   README.md                   - Contains project information.
+│   setup.py                    - Python setup file.
+│   Wiki_Notes                  - Just some notes, I take during coding.
+│
+└───reds_py_lib/
+    │   __init__.py             - Python __init__ file.
+    │   logger.py               - Handles logging and log-files for my projects. 
+    │   output.py               - Handles custom outputs for my projects. (Colors etc.)
+</code></pre>
+
+<!---
+    │
+    ├───subfolder1
+    │   │   file111.txt
+    │   │   file112.txt
+    │   │   ...
+    │
+    └───folder2
+    │   file021.txt
+    │   file022.txt
+--></div>
         </div>
 
         <footer class="col-md-12">
